@@ -1,0 +1,97 @@
+# -----------------------------------------------------------------------------
+# Operating System & Editor generated files
+# -----------------------------------------------------------------------------
+# Thumbs.db, .DS_Store, etc.
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Emacs
+*~
+\#*
+.elc
+
+# VS Code
+.vscode/
+
+# IDE files (IntelliJ, Eclipse, etc.)
+.idea/
+.settings/
+.project
+.classpath
+
+---
+
+# -----------------------------------------------------------------------------
+# Dependency Directories
+# -----------------------------------------------------------------------------
+# Node.js
+/node_modules
+
+# Python
+/venv
+/env
+__pycache__
+*.pyc
+
+# Ruby
+/vendor/bundle
+
+# PHP
+/vendor
+
+# Java/Maven/Gradle
+/target
+/build
+*.class
+
+---
+
+# -----------------------------------------------------------------------------
+# Build/Generated/Temporary Files
+# -----------------------------------------------------------------------------
+# Log files
+*.log
+npm-debug.log*
+
+# Compiled outputs
+/dist
+/build
+*.o
+*.obj
+*.exe
+*.dll
+
+# Temporary/Backup files
+*~
+*.bak
+*.tmp
+
+# Configuration files that are often environment-specific (and shouldn't be shared)
+# A common practice is to commit a template/example config file and ignore the real one
+# For example:
+# config.local.js
+# .env
+.env
+.env.local
+
+---
+
+# -----------------------------------------------------------------------------
+# Miscellaneous
+# -----------------------------------------------------------------------------
+# Archives
+*.zip
+*.tar
+*.rar
+*.gz
+
+# Database files
+*.sqlite
+*.db

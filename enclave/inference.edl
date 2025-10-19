@@ -1,0 +1,34 @@
+enclave {
+    from "openenclave/edl/syscall.edl" import *;
+    from "platform.edl" import *;
+
+    trusted {
+        /* Initialize model in enclave */
+        public oe_result_t ecall_load_model(
+            [in, size=model_size] const uint8_t* encrypted_model,
+            size_t model_size
+        );
+
+        /* Run inference */
+        public oe_result_t ecall_inference(
+            [in, count=input_count] const float* input_data,
+            size_t input_count,
+            [out, count=output_count] float* output_data,
+            size_t output_count
+        );
+
+        /* Generate attestation report */
+        public oe_result_t ecall_generate_attestation(
+            [in, size=nonce_size] const uint8_t* nonce,
+            size_t nonce_size,
+            [out, size=report_size] uint8_t* report_buffer,
+            size_t report_size,
+            [out] size_t* actual_report_size
+        );
+    };
+
+    untrusted {
+        /* Log message from enclave */
+        void ocall_print([in, string] const char* message);
+    };
+};
