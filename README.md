@@ -159,5 +159,4 @@ MIT License - see LICENSE file
 ## Resources
 
 - Open Enclave SDK: https://openenclave.io
-- Documentation: https://docs.furcate.io/tee/
-- Security: security@furcate.io
+- Security: contact@furcate.io
